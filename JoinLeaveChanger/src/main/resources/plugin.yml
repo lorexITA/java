@@ -1,0 +1,7 @@
+name: JoinLeaveChanger
+version: '${project.version}'
+main: me.lorex.joinleavechanger.joinleavechanger.JoinLeaveChanger
+api-version: 1.17
+authors: [ LOREXITA ]
+description: A plugin that allows you to change the join message
+website: https://github.com/lorexITA
