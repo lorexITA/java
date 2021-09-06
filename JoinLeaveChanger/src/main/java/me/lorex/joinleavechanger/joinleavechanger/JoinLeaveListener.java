@@ -21,7 +21,13 @@ public class JoinLeaveListener implements Listener {
     public void onJoin(PlayerJoinEvent e) {
 
         Player player = e.getPlayer();
-        e.setJoinMessage(player.getDisplayName() + ChatColor.GRAY + "[" + ChatColor.GREEN + "+" + ChatColor.GRAY + "]");
+
+        if(player.hasPlayedBefore()) {
+           player.sendMessage(ChatColor.AQUA + "Ciao" + player.getDisplayName() + ", bentornato nel server!");
+           e.setJoinMessage(player.getDisplayName() + ChatColor.GRAY + "[" + ChatColor.GREEN + "+" + ChatColor.GRAY + "]");
+        }else{
+            e.setJoinMessage(ChatColor.AQUA + "Diamo il benvenuto a " + player.getDisplayName());
+        }
 
     }
 //per modificare il messaggio dopo il nome, cambiare il testo all'interno delle virgolette
