@@ -1,5 +1,6 @@
 package me.lorex.afkplugin;
 
+import Events.PlayerMoveListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class AfkPlugin extends JavaPlugin {
@@ -8,6 +9,8 @@ public final class AfkPlugin extends JavaPlugin {
     public void onEnable() {
 
         System.out.println("PLUGIN AFK ABILITATO!");
+
+        getServer().getPluginManager().registerEvents(new PlayerMoveListener(), this);
 
     }
 
