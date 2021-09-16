@@ -1,0 +1,7 @@
+name: AfkPlugin
+version: '${project.version}'
+main: me.lorex.afkplugin.AfkPlugin
+api-version: 1.17
+authors: [ LOREXITA ]
+description: Un plugin per afk
+website: https://github.com/lorexITA
