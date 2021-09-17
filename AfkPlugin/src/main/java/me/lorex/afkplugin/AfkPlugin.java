@@ -11,6 +11,7 @@ public final class AfkPlugin extends JavaPlugin {
         System.out.println("PLUGIN AFK ABILITATO!");
 
         getServer().getPluginManager().registerEvents(new PlayerMoveListener(), this);
+        getCommand("afk").setExecutor(new AFKcommand());
 
     }
 
