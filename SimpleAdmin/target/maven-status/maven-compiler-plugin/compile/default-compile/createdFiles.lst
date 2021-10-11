@@ -1,0 +1,4 @@
+me\lorex\simpleadmin.class
+Commands\FlyCommand.class
+Commands\GlowCommand.class
+Commands\VanishCommand.class
